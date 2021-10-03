@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/sgf/static/css/main.da689144.chunk.css",
+    "main.js": "/sgf/static/js/main.6b57b214.chunk.js",
+    "main.js.map": "/sgf/static/js/main.6b57b214.chunk.js.map",
+    "runtime-main.js": "/sgf/static/js/runtime-main.8d0a2683.js",
+    "runtime-main.js.map": "/sgf/static/js/runtime-main.8d0a2683.js.map",
+    "static/css/2.8cebfa1f.chunk.css": "/sgf/static/css/2.8cebfa1f.chunk.css",
+    "static/js/2.2e4578ae.chunk.js": "/sgf/static/js/2.2e4578ae.chunk.js",
+    "static/js/2.2e4578ae.chunk.js.map": "/sgf/static/js/2.2e4578ae.chunk.js.map",
+    "static/js/3.87bb982a.chunk.js": "/sgf/static/js/3.87bb982a.chunk.js",
+    "static/js/3.87bb982a.chunk.js.map": "/sgf/static/js/3.87bb982a.chunk.js.map",
+    "index.html": "/sgf/index.html",
+    "static/css/2.8cebfa1f.chunk.css.map": "/sgf/static/css/2.8cebfa1f.chunk.css.map",
+    "static/css/main.da689144.chunk.css.map": "/sgf/static/css/main.da689144.chunk.css.map",
+    "static/js/2.2e4578ae.chunk.js.LICENSE.txt": "/sgf/static/js/2.2e4578ae.chunk.js.LICENSE.txt",
+    "static/media/2019 Graduation graduants      seated (1).33554c39.jpg": "/sgf/static/media/2019 Graduation graduants      seated (1).33554c39.jpg",
+    "static/media/index.css": "/sgf/static/media/SGF.49ffc785.jpg",
+    "static/media/admission menu.6982b2d0.png": "/sgf/static/media/admission menu.6982b2d0.png",
+    "static/media/contact.bfcface6.png": "/sgf/static/media/contact.bfcface6.png",
+    "static/media/private lesson with booking.5854b6e6.png": "/sgf/static/media/private lesson with booking.5854b6e6.png",
+    "static/media/sgflogo2.181a82e1.png": "/sgf/static/media/sgflogo2.181a82e1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d0a2683.js",
+    "static/css/2.8cebfa1f.chunk.css",
+    "static/js/2.2e4578ae.chunk.js",
+    "static/css/main.da689144.chunk.css",
+    "static/js/main.6b57b214.chunk.js"
+  ]
+}
