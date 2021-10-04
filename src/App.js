@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, Route } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import HomeScreen from "./Screens/HomeScreen";
 import AboutUsScreen from "./Screens/AboutUsScreen";
 import AdmissionScreen from "./Screens/AdmissionScreen";
@@ -19,64 +19,79 @@ import Eventregister from "./Components/Eventregister";
 import sgf from './sgffiles/sgflogo2.png';
 function App() {
   return (
-    <BrowserRouter>
-      <div className="grid-container">
-        <header>
-          <nav className='row'>
-            <div>
-              <Link to="/" className='brand'>
-                <img className='header-image' src={sgf} alt='school logo' />
-                <p>SGF SCHOOLS</p>
-              </Link>
-            </div>
-            <div>
-              <Link to="/AboutUs">About Us</Link>
-              <Link to="/Admission"> Admission</Link>
-              <Link to="/Management">Management </Link>
-              <Link to="/Event">Event </Link>
-              <Link to="/Contact"> Contact</Link>
-            </div>
-          </nav>
-        </header>
-        <main>
-          <Route path="/AboutUs" component={AboutUsScreen}></Route>
-          <Route path="/Admission" component={AdmissionScreen}></Route>
-          <Route path="/Management" component={ManagementScreen}></Route>
-          <Route path="/Event" component={EventScreen}></Route>
-          <Route path="/Contact" component={ContactScreen}></Route>
-          <Route path="/auntyameh" component={auntyameh}></Route>
-          <Route path="/MROKAFOR" component={mrokafor}></Route>
-          <Route path="/mrpaul1" component={mrpaul1}></Route>
-          <Route path="/mrpaul2" component={mrpaul2}></Route>
-          <Route path="/mrpaul3" component={mrpaul3}></Route>
-          <Route path="/mrpaul4" component={mrpaul4}></Route>
-          <Route path="/Primaryregister" component={Primaryregister}></Route>
-          <Route path="/Nurseryregister" component={Nurseryregister}></Route>
-          <Route path="/Privatelessonregister" component={Privatelessonregister}></Route>
-          <Route path="/Eventregister" component={Eventregister}></Route>
-          <Route exact path="/" component={HomeScreen} ></Route>
-          Thank you
+    <div className="grid-container">
+      <header>
+        <nav className='row'>
 
-        </main>
-        <footer>
-          <div className='footer-row'>
-            <div>
-              <Link to="/">
-                <img className='footer-image' src='\images\logofav.ico' alt='hmtechlogo' />
-              </Link>
-            </div>
-            <div>
-              <Link to="/AboutUs">AboutUs</Link>
-              <Link to="/Admission"> Admission</Link>
-              <Link to="/Management">Management </Link>
-              <Link to="/Event">Event </Link>
-              <Link to="/Contact"> Contact</Link>
-            </div>
+          <div>
+            <Link to="/" className='brand'>
+              <img className='header-image' src={sgf} alt='school logo' />
+              <p>SGF SCHOOLS</p>
+            </Link>
           </div>
-        </footer>
-      </div>
+          <div>
+            <Link to="/AboutUs">About Us</Link>
+            <Link to="/Admission"> Admission</Link>
+            <Link to="/Management">Management </Link>
+            <Link to="/Event">Event </Link>
+            <Link to="/Contact"> Contact</Link>
+          </div>
+        </nav>
+        <switch>
+          <Route exact path="/" >
+            <HomeScreen />
+          </Route>
+          <Route exact path="/Admission" >
+            <AdmissionScreen />
+          </Route>
+          <Route exact path="/Management" >
+            <ManagementScreen />
+          </Route>
+          <Route exact path="/Event" >
+            <EventScreen />
+          </Route>
+          <Route exact path="/Contact" >
+            <ContactScreen />
+          </Route>
+        </switch>
+      </header>
+      <main>
+        <Route path="/AboutUs" component={AboutUsScreen}></Route>
+        <Route path="/Admission" component={AdmissionScreen}></Route>
+        <Route path="/Management" component={ManagementScreen}></Route>
+        <Route path="/Event" component={EventScreen}></Route>
+        <Route path="/Contact" component={ContactScreen}></Route>
+        <Route path="/auntyameh" component={auntyameh}></Route>
+        <Route path="/MROKAFOR" component={mrokafor}></Route>
+        <Route path="/mrpaul1" component={mrpaul1}></Route>
+        <Route path="/mrpaul2" component={mrpaul2}></Route>
+        <Route path="/mrpaul3" component={mrpaul3}></Route>
+        <Route path="/mrpaul4" component={mrpaul4}></Route>
+        <Route path="/Primaryregister" component={Primaryregister}></Route>
+        <Route path="/Nurseryregister" component={Nurseryregister}></Route>
+        <Route path="/Privatelessonregister" component={Privatelessonregister}></Route>
+        <Route path="/Eventregister" component={Eventregister}></Route>
+        <Route exact path="/" component={HomeScreen} ></Route>
 
-    </BrowserRouter>
+      </main>
+      <footer>
+        <div className='footer-row'>
+          <div>
+            <Link to="/">
+              <img className='footer-image' src='\images\logofav.ico' alt='hmtechlogo' />
+            </Link>
+          </div>
+          <div>
+            <Link to="/AboutUs">AboutUs</Link>
+            <Link to="/Admission"> Admission</Link>
+            <Link to="/Management">Management </Link>
+            <Link to="/Event">Event </Link>
+            <Link to="/Contact"> Contact</Link>
+          </div>
+        </div>
+      </footer>
+    </div>
+
 
   );
 }
