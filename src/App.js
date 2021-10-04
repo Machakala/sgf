@@ -22,7 +22,7 @@ function App() {
     <BrowserRouter>
       <div className="grid-container">
         <header>
-          <div className='row'>
+          <nav className='row'>
             <div>
               <Link to="/" className='brand'>
                 <img className='header-image' src={sgf} alt='school logo' />
@@ -36,7 +36,7 @@ function App() {
               <Link to="/Event">Event </Link>
               <Link to="/Contact"> Contact</Link>
             </div>
-          </div>
+          </nav>
         </header>
         <main>
           <Route path="/AboutUs" component={AboutUsScreen}></Route>
@@ -54,7 +54,7 @@ function App() {
           <Route path="/Nurseryregister" component={Nurseryregister}></Route>
           <Route path="/Privatelessonregister" component={Privatelessonregister}></Route>
           <Route path="/Eventregister" component={Eventregister}></Route>
-          <Route path="/" component={HomeScreen} exact></Route>
+          <Route exact path="/" component={HomeScreen} ></Route>
           Thank you
 
         </main>
