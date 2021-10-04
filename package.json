@@ -1,20 +1,36 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "http://machakala.github.io/sgf",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "bootstrap": "^5.1.1",
+    "calendar": "^0.1.1",
+    "carousel": "^0.0.3",
+    "date": "^1.0.2",
+    "emailjs-com": "^3.2.0",
+    "maps": "^0.3.3",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
+    "react-calendar": "^3.4.0",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.16.1",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
+    "react-toastify": "^8.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
