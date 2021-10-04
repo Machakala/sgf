@@ -39,7 +39,6 @@ function App() {
           </div>
         </header>
         <main>
-          <Route path="/" component={HomeScreen} exact></Route>
           <Route path="/AboutUs" component={AboutUsScreen}></Route>
           <Route path="/Admission" component={AdmissionScreen}></Route>
           <Route path="/Management" component={ManagementScreen}></Route>
@@ -55,6 +54,8 @@ function App() {
           <Route path="/Nurseryregister" component={Nurseryregister}></Route>
           <Route path="/Privatelessonregister" component={Privatelessonregister}></Route>
           <Route path="/Eventregister" component={Eventregister}></Route>
+          <Route path="/" component={HomeScreen} exact></Route>
+
 
         </main>
         <footer>
