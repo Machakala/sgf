@@ -55,7 +55,7 @@ function App() {
           <Route path="/Privatelessonregister" component={Privatelessonregister}></Route>
           <Route path="/Eventregister" component={Eventregister}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
-
+          Thank you
 
         </main>
         <footer>
