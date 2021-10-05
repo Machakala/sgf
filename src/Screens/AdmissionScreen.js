@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import sgf from '../sgffiles/contact.png';
-import sgf1 from '../sgffiles/admission/admission menu.png';
-import sgf2 from '../sgffiles/admission/private lesson with booking.png';
+import Nur from '../sgffiles/admission/addmissionnur.png';
+import PL from '../sgffiles/admission/admissionpl.png';
+import pry from '../sgffiles/admission/addmissionpry.png';
 function AdmissionScreen() {
     return (
         <div className='Admission'>
@@ -12,7 +12,7 @@ function AdmissionScreen() {
             <div className="card" >
                 <div >
                     <img className="medium"
-                        src={sgf}
+                        src={pry}
                         alt='primary'
                     />
                 </div>
@@ -25,7 +25,7 @@ function AdmissionScreen() {
             <div className="card" >
                 <div >
                     <img className="medium"
-                        src={sgf1}
+                        src={Nur}
                         alt='primary'
                     />
                 </div>
@@ -39,7 +39,7 @@ function AdmissionScreen() {
 
                 <div >
                     <img className="medium"
-                        src={sgf2}
+                        src={PL}
                         alt='primary'
                     />
                 </div>

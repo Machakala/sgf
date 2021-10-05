@@ -1,55 +1,33 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ManagementScreen(props) {
     const [showText, setShowText] = useState(true)
     const [showText1, setShowText1] = useState(false)
 
-    const teacher1 = (e) => {
-        props.history.push('/auntyameh');
-    }
-    const teacher2 = (e) => {
-        props.history.push('/MROKAFOR');
-    }
-    const teacher3 = (e) => {
-        props.history.push('/mrpaul1');
-    }
-    const teacher4 = (e) => {
-        props.history.push('/mrpaul2');
-    }
-    const teacher5 = (e) => {
-        props.history.push('/mrpaul3');
-    }
-    const teacher6 = (e) => {
-        props.history.push('/mrpaul4');
-    }
+
     const Text = () =>
         <div className='TEXTWORD'>
             <div className='TEXTWORD1'>
                 <div>
-                    HEAD TEACHER(AUNTY AMEH)
+                    (HEAD TEACHER) AUNTY AMEH
                 </div>
                 <br />
                 <div className='description'>
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
-
-                </div>
+                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education in 2006 at College of Education Kastina Alla, Benue where she obtained her NCE in Physical and Health Education.</div>
                 <br />
-                <button onClick={teacher1}> Read more...</button>
+                <button ><Link to="/auntyameh"> Read more...</Link></button>
             </div>
             <br />
             <div div className='TEXTWORD2'>
                 <div >
-                    MR OKAFOR
+                    (Proprietor) Mr. Okafor Onyekwelu
                 </div>
                 <br />
                 <div className='description'>
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
-                </div>
+                    From Anambra State of Nigeria, Mr. Okafor, a Chartered Accountant and Tax Practitioner started his Civil Servant Career in 1981 as a Clerk in Lagos with the present Transmission Company of Nigeria.                </div>
                 <br />
-                <button onClick={teacher2}> Read more...</button>
+                <button><Link to="/MROKAFOR"> Read more...</Link></button>
             </div>
         </div>
         ;
@@ -58,50 +36,54 @@ function ManagementScreen(props) {
         <div className='TEXTWORD'>
             <div className='TEXTWORD1'>
                 <div>
-                    Mr Paul Ameh1
+                    (Educationist) Mrs. Kemi Dauda
                 </div>
                 <br />
                 <div className='description'>
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
+                    She Is a warm dynamic educationist and researcher from Oyo state of Nigeria. She attended University of Ilorin in Kwara State of Nigeria where she obtained her B.Sc. (Hons) in Economic Education in 1999.
+
                 </div>
                 <br />
-                <button onClick={teacher3}> Read more...</button>
+                <button><Link to="/kdauda"> Read more...</Link></button>
             </div>
             <br />
             <div div className='TEXTWORD2'>
                 <div >
-                    Mr Paul Ameh2
+                    (Effective Administrator) Mr. Olurotimi Owadimbola
                 </div>
                 <br />
                 <div className='description'>
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
+                    From Ondo State of Nigeria, Mr. Owadimbola attended Offa Polytechnic Offa in Kwara State of Nigeria where he got Higher National Diploma in Business Administration.
+
                 </div>
                 <br />
-                <button onClick={teacher4}> Read more...</button>
+                <button><Link to="/oowadimbola"> Read more...</Link></button>
             </div>
             <br />
             <div className='TEXTWORD1'>
                 <div>
-                    Mr Paul Ameh3
+                    (Seasoned Educationist) Mrs. Maria Onuoha
                 </div>
                 <br />
                 <div className='description'>
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
+                    A seasoned Educationist, Mrs. Onuoha from Imo state of Nigeria attended National institute of Moral and religious Education Akoka, Lagos where she obtained her Nigeria Certificate of Education (NCE) in 1997.
+
                 </div>
                 <br />
-                <button onClick={teacher5}> Read more...</button>
+                <button><Link to="/monuoha"> Read more...</Link></button>
             </div>
             <br />
             <div div className='TEXTWORD2'>
                 <div >
-                    Mr Paul Ameh4
+                    (Database Administrator) Mr. Adeoye Paul
                 </div>
                 <br />
                 <div className='description'>
-                    Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education at College of Education Kastina Alla in Benue state where she obtained her NCE in Physical and Health Education in 2006. She attended various seminars and training programs including Citizenship and Leadership training in 2005, Longman Seminar in Effective teaching of English language and Mathematics in 2009
+                    Mr. Adeoye,from Ogun state of Nigeria, is a dynamic self-driven and motivated Database Administrator. He attended Federal Polytechnic, Offa in kwara state where he obtained his Higher National Diploma In 1999.
+
                 </div>
                 <br />
-                <button onClick={teacher6}> Read more...</button>
+                <button><Link to="/apaul"> Read more...</Link></button>
             </div>
 
         </div>

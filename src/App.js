@@ -8,10 +8,10 @@ import EventScreen from "./Screens/EventScreen.js";
 import ContactScreen from "./Screens/ContactScreen";
 import auntyameh from "./Teachers/auntyameh";
 import mrokafor from "./Teachers/mrokafor";
-import mrpaul1 from "./Teachers/mrpaul1";
-import mrpaul2 from "./Teachers/mrpaul2";
-import mrpaul3 from "./Teachers/mrpaul3";
-import mrpaul4 from "./Teachers/mrpaul4";
+import kdauda from "./Teachers/kdauda";
+import oowadimbola from "./Teachers/oowadimbola";
+import monuoha from "./Teachers/monuoha";
+import apaul from "./Teachers/apaul";
 import Primaryregister from "./Admissionforms/Primaryregister";
 import Nurseryregister from "./Admissionforms/Nurseryregister";
 import Privatelessonregister from "./Admissionforms/Privatelessonregister";
@@ -20,6 +20,7 @@ import sgf from './sgffiles/sgflogo2.png';
 function App() {
   return (
     <div className="grid-container">
+
       <header>
         <nav className='row'>
 
@@ -37,49 +38,42 @@ function App() {
             <Link to="/Contact"> Contact</Link>
           </div>
         </nav>
-        <switch>
-          <Route exact path="/" >
-            <HomeScreen />
-          </Route>
-          <Route exact path="/Admission" >
-            <AdmissionScreen />
-          </Route>
-          <Route exact path="/Management" >
-            <ManagementScreen />
-          </Route>
-          <Route exact path="/Event" >
-            <EventScreen />
-          </Route>
-          <Route exact path="/Contact" >
-            <ContactScreen />
-          </Route>
-        </switch>
       </header>
+
+      <Switch>
+        <Route exact path="/" >
+          <HomeScreen />
+        </Route>
+        <Route exact path="/Admission" >
+          <AdmissionScreen />
+        </Route>
+        <Route exact path="/Management" >
+          <ManagementScreen />
+        </Route>
+        <Route exact path="/Event" >
+          <EventScreen />
+        </Route>
+        <Route exact path="/Contact" >
+          <ContactScreen />
+        </Route>
+      </Switch>
       <main>
         <Route path="/AboutUs" component={AboutUsScreen}></Route>
-        <Route path="/Admission" component={AdmissionScreen}></Route>
-        <Route path="/Management" component={ManagementScreen}></Route>
-        <Route path="/Event" component={EventScreen}></Route>
-        <Route path="/Contact" component={ContactScreen}></Route>
         <Route path="/auntyameh" component={auntyameh}></Route>
         <Route path="/MROKAFOR" component={mrokafor}></Route>
-        <Route path="/mrpaul1" component={mrpaul1}></Route>
-        <Route path="/mrpaul2" component={mrpaul2}></Route>
-        <Route path="/mrpaul3" component={mrpaul3}></Route>
-        <Route path="/mrpaul4" component={mrpaul4}></Route>
+        <Route path="/kdauda" component={kdauda}></Route>
+        <Route path="/oowadimbola" component={oowadimbola}></Route>
+        <Route path="/monuoha" component={monuoha}></Route>
+        <Route path="/apaul" component={apaul}></Route>
         <Route path="/Primaryregister" component={Primaryregister}></Route>
         <Route path="/Nurseryregister" component={Nurseryregister}></Route>
         <Route path="/Privatelessonregister" component={Privatelessonregister}></Route>
         <Route path="/Eventregister" component={Eventregister}></Route>
-        <Route exact path="/" component={HomeScreen} ></Route>
 
       </main>
       <footer>
         <div className='footer-row'>
-          <div>
-            <Link to="/">
-              <img className='footer-image' src='\images\logofav.ico' alt='hmtechlogo' />
-            </Link>
+          <div><></>
           </div>
           <div>
             <Link to="/AboutUs">AboutUs</Link>
@@ -90,8 +84,8 @@ function App() {
           </div>
         </div>
       </footer>
-    </div>
 
+    </div >
 
   );
 }

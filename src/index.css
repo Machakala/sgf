@@ -55,7 +55,7 @@ a.brand {
   
   background-image: url(\SGF.jpg);
   background-size: 100%;
-  height: fit-content;
+  height: 45rem;
 }
 .homewords{
   font-size: 0.7rem;
@@ -108,7 +108,7 @@ height: 2rem;
 /*Admission*/
 .Admission{
 
-  height: fit-content;
+  height: 45rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

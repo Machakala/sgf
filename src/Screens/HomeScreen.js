@@ -25,11 +25,8 @@ function HomeScreen(props) {
                                 onClick={handleEvent}>
                                 Upcoming Event
                             </button>
-                        </div>
-                        <div>
 
                         </div>
-
                     </div>
 
                 </div>
