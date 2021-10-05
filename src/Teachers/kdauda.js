@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 
 function kdauda() {
@@ -17,9 +18,11 @@ function kdauda() {
 
 
             </div>
-            <button>
-                <Link to='/Management'> Go back...</Link>
-            </button>
+            <Button variant="outline-dark" >
+                <Link to="/Management">
+                    Go back...
+                </Link>
+            </Button>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from 'react-bootstrap';
 
 function ManagementScreen(props) {
     const [showText, setShowText] = useState(true)
@@ -16,7 +17,8 @@ function ManagementScreen(props) {
                 <div className='description'>
                     Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education in 2006 at College of Education Kastina Alla, Benue where she obtained her NCE in Physical and Health Education.</div>
                 <br />
-                <button ><Link to="/auntyameh"> Read more...</Link></button>
+                <Button variant="outline-dark" ><Link to="/auntyameh"> Read more...</Link></Button>
+
             </div>
             <br />
             <div div className='TEXTWORD2'>
@@ -27,9 +29,10 @@ function ManagementScreen(props) {
                 <div className='description'>
                     From Anambra State of Nigeria, Mr. Okafor, a Chartered Accountant and Tax Practitioner started his Civil Servant Career in 1981 as a Clerk in Lagos with the present Transmission Company of Nigeria.                </div>
                 <br />
-                <button><Link to="/MROKAFOR"> Read more...</Link></button>
+                <Button variant="outline-dark" ><Link to="/MROKAFOR"> Read more...</Link></Button>
+
             </div>
-        </div>
+        </div >
         ;
 
     const Text1 = () =>
@@ -44,7 +47,8 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <button><Link to="/kdauda"> Read more...</Link></button>
+                <Button variant="outline-dark" ><Link to="/kdauda"> Read more...</Link></Button>
+
             </div>
             <br />
             <div div className='TEXTWORD2'>
@@ -57,7 +61,8 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <button><Link to="/oowadimbola"> Read more...</Link></button>
+                <Button variant="outline-dark" ><Link to="/oowadimbola"> Read more...</Link></Button>
+
             </div>
             <br />
             <div className='TEXTWORD1'>
@@ -70,7 +75,8 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <button><Link to="/monuoha"> Read more...</Link></button>
+                <Button variant="outline-dark" ><Link to="/monuoha"> Read more...</Link></Button>
+
             </div>
             <br />
             <div div className='TEXTWORD2'>
@@ -83,7 +89,7 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <button><Link to="/apaul"> Read more...</Link></button>
+                <Button variant="outline-dark" ><Link to="/apaul"> Read more...</Link></Button>
             </div>
 
         </div>

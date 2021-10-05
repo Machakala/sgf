@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { Button } from 'react-bootstrap';
 
 export const ContactScreen = () => {
     const form = useRef();
@@ -66,7 +67,7 @@ export const ContactScreen = () => {
                     name="message"
                     placeholder="Message"
                 ></textarea>
-                <button type="submit" value="Send">SEND US A MESSAGE</button>
+                <Button variant="primary" type="submit" value="Send">SEND US A MESSAGE</Button>
             </div>
 
         </form>

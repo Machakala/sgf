@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, Switch, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 import HomeScreen from "./Screens/HomeScreen";
 import AboutUsScreen from "./Screens/AboutUsScreen";
 import AdmissionScreen from "./Screens/AdmissionScreen";
@@ -21,20 +23,29 @@ function App() {
   return (
     <div className="grid-container">
       <header>
-        <div className='footer-row'>
-          <div>
-            <Link to="/" className='brand'>
-              <img className='header-photo' src={sgf} alt='school logo' /><p>SGF SCHOOLS</p>
-            </Link>
-          </div>
-          <div>
-            <Link to="/AboutUs">AboutUs</Link>
-            <Link to="/Admission"> Admission</Link>
-            <Link to="/Management">Management </Link>
-            <Link to="/Event">Event </Link>
-            <Link to="/Contact"> Contact</Link>
-          </div>
-        </div>
+
+        <Navbar bg="success" variant="dark" expand="lg" sticky="top" fixed="top" >
+          <Container className="justify-content-end">
+            <Navbar.Brand as={Link} to={"/"}>
+              <img className='header-photo' src={sgf} alt='school logo' />
+              SGF SCHOOLS
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto" >
+
+              </Nav>
+              <Nav>
+                <Nav.Link as={Link} to={"/AboutUs"}>About Us</Nav.Link>
+                <Nav.Link as={Link} to={"/Admission"}>Admission</Nav.Link>
+                <Nav.Link as={Link} to={"/Management"}>Management</Nav.Link>
+                <Nav.Link as={Link} to={"/Event"}>Event</Nav.Link>
+                <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+
       </header>
 
 
@@ -70,17 +81,17 @@ function App() {
 
       </main>
       <footer>
-        <div className='footer-row'>
-          <div><></>
-          </div>
-          <div>
-            <Link to="/AboutUs">AboutUs</Link>
-            <Link to="/Admission"> Admission</Link>
-            <Link to="/Management">Management </Link>
-            <Link to="/Event">Event </Link>
-            <Link to="/Contact"> Contact</Link>
-          </div>
-        </div>
+        <Navbar bg="success" variant="dark" expand="sm">
+          <Container className="justify-content-center">
+            <Nav>
+              <Nav.Link as={Link} to={"/AboutUs"}>About Us</Nav.Link>
+              <Nav.Link as={Link} to={"/Admission"}>Admission</Nav.Link>
+              <Nav.Link as={Link} to={"/Management"}>Management</Nav.Link>
+              <Nav.Link as={Link} to={"/Event"}>Event</Nav.Link>
+              <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
       </footer>
     </div>
 

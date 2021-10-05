@@ -140,6 +140,10 @@ img.medium {
   max-width: 30rem;
   width: 100%;
 }
+.Nursery{
+  margin-top: 5rem;
+  height: 50rem;
+}
 /*Management*/
 .management{
 
@@ -211,8 +215,8 @@ img.medium {
 }
 /*Event*/
 .event{
-
-  height: fit-content;
+max-height: fit-content;
+  min-height: 50em;
 line-height: 3;
 text-align: center;
 }
@@ -225,8 +229,11 @@ text-align: center;
   margin-left: 2rem;
 }
 .col-1a{
-  max-width: 15rem;
-  margin-left: 20rem;
+  min-width: 20rem;
+  min-height: 20rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  margin-left: 2rem;
 }
 .col-12{
   display: flex;
@@ -415,6 +422,7 @@ button  {
 }
 /*Event*/
 .event{
+  
   height: fit-content;
 line-height: 3;
 text-align: center;
@@ -427,10 +435,15 @@ text-align: center;
   width: 3rem;
   min-width: 2rem;
 }
+ 
 .col-1a{
-visibility: visible;
-margin-left: 5rem;
-} 
+  
+  min-width: 10rem;
+  min-height: 10rem;
+  max-width: 10rem;
+  max-height: 10rem;
+  margin-left: 5rem;
+}
   input,
   textarea {
       font: 18px Helvetica, Arial, sans-serif;
@@ -444,5 +457,9 @@ margin-left: 5rem;
       font-size: 18px;
       outline: none;
       transition: all 0.2s ease-in-out;
+  }
+  .Nursery{
+    margin-top: 5rem;
+    height: 45rem;
   }
 }

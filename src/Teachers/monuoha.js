@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 function monuoha() {
     return (
@@ -14,9 +15,11 @@ function monuoha() {
                 of Professional Studies in Education from University of Lagos in 1991, Teachers Grade II Certificate in 1983. She attended various seminars, workshops and Conferences in Education related Courses.
                 Before her statutory retirement in 2016, Mrs. Onuoha Meritoriously taught in various private and Public Schools in Lagos State holding positions as Class Teacher, assistant Head Teacher and Head Teacher.
             </div>
-            <button>
-                <Link to='/Management'> Go back...</Link>
-            </button>
+            <Button variant="outline-dark" >
+                <Link to="/Management">
+                    Go back...
+                </Link>
+            </Button>
         </div>
     );
 }

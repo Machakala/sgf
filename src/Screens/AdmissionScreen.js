@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Nur from '../sgffiles/admission/addmissionnur.png';
 import PL from '../sgffiles/admission/admissionpl.png';
 import pry from '../sgffiles/admission/addmissionpry.png';
+import { Button } from 'react-bootstrap';
+
 function AdmissionScreen() {
     return (
         <div className='Admission'>
@@ -17,9 +19,13 @@ function AdmissionScreen() {
                     />
                 </div>
                 <div className="card-body" >
-                    <Link to='/Primaryregister' >
-                        <h2> Primary </h2>
-                    </Link>
+                    <Button variant="outline-dark" >
+                        <Link to='/Primaryregister' >
+                            Primary
+                        </Link>
+                    </Button>
+
+
                 </div>
             </div >
             <div className="card" >
@@ -30,9 +36,12 @@ function AdmissionScreen() {
                     />
                 </div>
                 <div className="card-body" >
-                    <Link to='/Nurseryregister' >
-                        <h2> Nursery </h2>
-                    </Link>
+                    <Button variant="outline-dark" >
+                        <Link to='/Nurseryregister' >
+                            Nursery
+                        </Link>
+                    </Button>
+
                 </div>
             </div >
             <div className="card" >
@@ -44,9 +53,12 @@ function AdmissionScreen() {
                     />
                 </div>
                 <div className="card-body" >
-                    <Link to='/Privatelessonregister' >
-                        <h2> Private Lesson</h2>
-                    </Link>
+                    <Button variant="outline-dark" >
+                        <Link to='/Privatelessonregister' >
+                            Private Lesson
+                        </Link>
+                    </Button>
+
                 </div>
             </div >
         </div>

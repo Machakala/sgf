@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const Primaryregister = () => {
     const form = useRef();
@@ -15,7 +17,7 @@ export const Primaryregister = () => {
             });
     };
 
-    return (<div>
+    return (<div className="Nursery">
         <h2 className='text-tittle'>
             <strong>
                 ADDMISSION FORM DETAILS         </strong>
@@ -59,7 +61,9 @@ export const Primaryregister = () => {
                 name="message"
                 placeholder="Message"
             ></textarea>
-            <button type="submit" value="Send">SUBMIT</button>
+            <Button variant="primary" type="submit" value="Send">SUBMIT</Button>
+            <Button variant="outline-primary"><Link to="/Admission">BACK</Link></Button>
+
         </form>
     </div>
     );

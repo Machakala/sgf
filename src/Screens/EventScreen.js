@@ -1,8 +1,12 @@
 import React from "react";
 // import Calendar from 'react-calendar';
+import { Row, Col, Container } from "react-bootstrap";
 import 'react-calendar/dist/Calendar.css';
 import { Link } from "react-router-dom";
 import grad from '../sgffiles/2019 Graduation graduants      seated (1).jpg';
+import yearParty from '../sgffiles/End of year Party Pupils enjoying    with Father Chrismass in one of the end of year Party.jpg';
+import { Button } from 'react-bootstrap';
+
 //import Eventregister from "../Components/Eventregister";
 
 function EventScreen(props) {
@@ -51,54 +55,48 @@ const handleclick = (e) => {
                     <subtittle className="about1">
                         Graduation
                     </subtittle>
-                    <div className='col-2'>
-                        <div className='col-1'>
-                            <div className='col-12'>
-                                <div >
-                                    <button><Link to="/Eventregister"> REGISTER</Link></button>
+                    <Container fluid>
 
-                                </div>
-
-                            </div>
-                            <div>
-                                Location:ogba
-                            </div>
-                        </div>
-                        <div className='col-1a'>
-                            <img
-                                className='col-1a'
-                                src={grad}
-                                alt='{events.name}'
-                            />
-                        </div>
-                    </div>
+                        <Row >
+                            <Col bg="light">
+                                <Button variant="outline-success"><Link to="/Eventregister"> REGISTER</Link></Button>
+                            </Col>
+                            <Col>
+                                Location: School
+                            </Col>
+                            <Col>
+                                <img
+                                    className='col-1a'
+                                    src={grad}
+                                    alt='graduants'
+                                />
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
                 <div className="eventover" >
                     <subtittle className="about1">
-                        birthday
+                        End Of The Year Party
                     </subtittle>
-                    <div className='col-2'>
-                        <div className='col-1'>
-                            <div className='col-12'>
-                                <div>
-                                    <button onClick={Regover}>Closed</button>
-                                </div>
-                            </div>
-                            <div>
-                                Location:ogba
-                            </div>
-                        </div>
-                        <div className='col-1a'>
+                    <Row>
+                        <Col >
+                            <Button variant="outline-success" onClick={Regover}>Closed</Button>
+                        </Col>
+                        <Col>
+                            Location: School
+                        </Col>
+                        <Col>
                             <img
-                                src='{events.image}'
-                                alt='{events.name}'
+                                className='col-1a'
+                                src={yearParty}
+                                alt='end of the year party'
                             />
-                        </div>
-                    </div>
+                        </Col>
+                    </Row>
                 </div>
 
             </div >
-        </div>
+        </div >
 
     );
 }

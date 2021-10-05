@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 
 function oowadimbola() {
@@ -14,10 +15,11 @@ function oowadimbola() {
                 As an effective administrator, Mr. Owadimbola has a good knowledge of the workings in the Nigerian Educational environment, the associated challenges and the appropriate strategies of addressing such challenges in line with best practices expected of any responsible School operation in
                 Nigeria.
             </div>
-            <button>
-
-                <Link to='/Management'> Go back...</Link>
-            </button>
+            <Button variant="outline-dark" >
+                <Link to="/Management">
+                    Go back...
+                </Link>
+            </Button>
         </div>
     );
 }

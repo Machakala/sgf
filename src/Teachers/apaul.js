@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 function apaul() {
     return (
@@ -15,9 +16,13 @@ function apaul() {
 
                 His reliability and ability to adapt to any new situation have made him goal achiever. As a researcher, he has carried out and submitted various projects that had effectively contributed in decision making of the Companies where he had worked.
             </div>
-            <button>
-                <Link to='/Management'> Go back...</Link>
-            </button>
+
+            <Button variant="outline-dark" >
+                <Link to="/Management">
+                    Go back...
+                </Link>
+            </Button>
+
         </div>
     );
 }

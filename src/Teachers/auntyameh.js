@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 
 function auntyameh() {
@@ -15,7 +16,11 @@ function auntyameh() {
                 She was employed as a class teacher in November, 2012. Before her appointment as the Head Teacher in April, 2019 Mary Lemechi had thought various classes. She won the Best teacher’s award for three years. She loves the Children and her children never left calling her “aunty Ameh” till today.
                 Mary attended Lagos State Ministry of Education Workshop on New Curriculum implementation in 2016. In November 2018, she attended training program in the modern and effective teaching of Phonic and Diction. In 2019 she attended Evans Brothers Publishers Workshop.</div>
             <div>
-                <button><Link to='/Management'> Go back...</Link></button>
+                <Button variant="outline-dark" >
+                    <Link to="/Management">
+                        Go back...
+                    </Link>
+                </Button>
             </div>
         </div>
     );

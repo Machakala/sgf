@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { withRouter } from 'react-router';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const Eventregister = () => {
     const form = useRef();
@@ -16,7 +18,7 @@ export const Eventregister = () => {
             });
     };
 
-    return (<div>
+    return (<div className="Nursery">
         <h2 className='text-tittle'>
             <strong>
                 REGISTER FOR EVENT            </strong>
@@ -56,7 +58,9 @@ export const Eventregister = () => {
                 type="text"
                 name="message"
             ></textarea>
-            <button type="submit" value="Send">REGISTER</button>
+            <Button variant="primary" type="submit" value="Send">REGISTER</Button>
+            <Button variant="outline-primary"><Link to="/Event">BACK</Link></Button>
+
         </form>
     </div>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 
 function mrokafor() {
@@ -15,10 +16,11 @@ function mrokafor() {
 
                 Mr. Okafor started holding leadership positions in the Company in 1986. He was a team player, self-motivated and goal oriented. Mr. Okafor attended many courses, trainings workshops, seminars and Conferences of various levels of management He climbed the public ladder of progression for thirty five years He was statutorily retired in 2016. He was however retained as a consultant for additional two and half years.
             </div>
-            <button>
-
-                <Link to='/Management'> Go back...</Link>
-            </button>
+            <Button variant="outline-dark" >
+                <Link to="/Management">
+                    Go back...
+                </Link>
+            </Button>
         </div>
     );
 }
