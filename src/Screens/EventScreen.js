@@ -1,12 +1,18 @@
-import React, { useState } from "react";
-import Calendar from 'react-calendar';
+import React from "react";
+// import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { Link } from "react-router-dom";
 import grad from '../sgffiles/2019 Graduation graduants      seated (1).jpg';
+//import Eventregister from "../Components/Eventregister";
+
 function EventScreen(props) {
+    /*
     const [dateState, setDateState] = useState()
+
     const KEEPDATE = (e) => {
         setDateState(e);
-        props.history.push('/Eventregister')
+        props.history.push({ Eventregister })
+
     }
     const [showText, setShowText] = useState(false)
     const Text = () =>
@@ -18,20 +24,25 @@ function EventScreen(props) {
             />
         </div>
         ;
-    const handleclick = (e) => {
-        setShowText(true);
-    }
+    */
+    /*
+const handleclick = (e) => {
+    setShowText(true);
+}
+{//showText ? <Text /> : null}*/
+
     const Regover = (e) => {
-        setShowText(false);
+        //        setShowText(false);
         window.alert('Registration is Over');
     }
+    /*
     const Regopen = (e) => {
         handleclick();
-
     }
+    */
     return (
         <div >
-            <tittle className="home">
+            <tittle className="about1">
                 EVENT
             </tittle>
             <br />
@@ -44,9 +55,10 @@ function EventScreen(props) {
                         <div className='col-1'>
                             <div className='col-12'>
                                 <div >
-                                    <button onClick={Regopen}> Register</button>
+                                    <button><Link to="/Eventregister"> REGISTER</Link></button>
+
                                 </div>
-                                {showText ? <Text /> : null}
+
                             </div>
                             <div>
                                 Location:ogba

@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { withRouter } from 'react-router';
 
 export const Eventregister = () => {
     const form = useRef();
@@ -61,4 +62,4 @@ export const Eventregister = () => {
     );
 };
 
-export default Eventregister;
+export default withRouter(Eventregister);

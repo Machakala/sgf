@@ -18,7 +18,7 @@ export const ContactScreen = () => {
     return (
         <form ref={form} onSubmit={sendEmail}>
             <div>
-                <h2 className='text-tittle'>
+                <h2 className='about1'>
                     <strong>
                         CONTACT US
                     </strong>

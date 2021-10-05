@@ -26,7 +26,7 @@ function AdmissionScreen() {
                 <div >
                     <img className="medium"
                         src={Nur}
-                        alt='primary'
+                        alt='Nursery'
                     />
                 </div>
                 <div className="card-body" >
@@ -40,7 +40,7 @@ function AdmissionScreen() {
                 <div >
                     <img className="medium"
                         src={PL}
-                        alt='primary'
+                        alt='private-lesson'
                     />
                 </div>
                 <div className="card-body" >

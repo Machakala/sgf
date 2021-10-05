@@ -24,11 +24,11 @@ a {
 }
 a:hover {
   color: black;
+  text-decoration: none;
 
 }
 
 /*header*/
-
 header a {
   padding: 1rem;
 }
@@ -39,15 +39,16 @@ a.brand {
   font-weight: bold;
 }
 .row {
-  height: fit-content;
+
   background-color: #144e4e;
-  padding: 20px 0 10px;
+  padding: 5px 0 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
 }
-.header-image{
+.header-photo{
   width: 3rem;
 }
 /*homescreen*/
@@ -81,6 +82,7 @@ a.brand {
 }
 /*aboutusscreen*/
 .about{
+
   height: fit-content;
 }
 .about1{
@@ -141,42 +143,39 @@ img.medium {
   height: fit-content;
 }
 .management1{
+
   
   display: flex;
   text-align: justify;
   justify-content: space-evenly;
-  width: 20rem;
+  width: 30rem;
   margin-left: 40%;
 }
+
 .management1a{
+
   border-style: hidden;
 }
 .management1b{
   border-style: hidden;
 }
 .management1a:hover{
+
   color: #144e4e;
   border-style: groove;
   border-width: 0.3rem;
 }
 .management1b:hover{
+
   color: #144e4e;
   border-style: groove;
   border-width: 0.3rem;
-}
-.teacherprofile{
-  height: 40rem;
-  text-align: justify;
-  border: 0.1rem #c0c0c0 transparent;
-  width: 95%;
-  padding: 2rem;
-  font-size: 1.2rem;
-  line-height: 2;
 }
 .TEXTWORD{
   padding: 3rem;
 }
 .TEXTWORD1{
+
   padding: 2rem;  
   width: 50%;
   height: fit-content;
@@ -186,6 +185,7 @@ img.medium {
   border-radius: 0.5rem;
 }
 .TEXTWORD2{
+
   margin-left: 33.5rem;
     width: 50%;
 
@@ -196,8 +196,19 @@ img.medium {
   background-color: #f8f8f8;
   border-radius: 0.5rem;
 }
+
+.teacherprofile{
+  height: 40rem;
+  text-align: justify;
+  border: 0.1rem #c0c0c0 transparent;
+  width: 95%;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
 /*Event*/
 .event{
+
   height: fit-content;
 line-height: 3;
 text-align: center;
@@ -205,15 +216,14 @@ text-align: center;
 .col-2{
   display: flex;
   padding: 2rem;
-  max-width: 45rem;
+  max-width: fit-content;
 }
 .col-1{
   margin-left: 2rem;
 }
 .col-1a{
-  max-width: 50%;
-  min-width: 50%;
-  margin-left: 30%;
+  max-width: 15rem;
+  margin-left: 20rem;
 }
 .col-12{
   display: flex;
@@ -254,12 +264,10 @@ textarea {
     transition: all 0.2s ease-in-out;
 }
 
-
-
 textarea {
+
     height: 200px;
 }
-
 
 button  {
   width: fit-content;
@@ -268,7 +276,7 @@ button  {
       border-radius: 1rem;
 
 }
-.homebutton{
+.homebutton1{
   height: fit-content;
   width: fit-content;
   border-radius: 2rem;
@@ -294,6 +302,7 @@ button  {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 
 }
 .footer-image{
@@ -302,3 +311,139 @@ button  {
   width: 1.5rem;
 }
 
+@media(max-width: 1175px) {
+  .footer-row{
+    background-color: #144e4e;
+    padding: 0;
+    margin: 0;  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+  }
+  .header-photo{
+
+    width: 1.5rem;
+  }
+  .home{
+  
+    background-image: url(\SGF.jpg);
+    background-size: 400%;
+    height: fit-content;
+  }
+  .homewords{
+    font-size: auto;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    color: skyblue;
+    line-height: 1;
+    text-align: justify;
+    justify-content: flex-start;
+
+  }
+  .homewords1{
+  
+    padding-left: 10.5rem;
+  }
+  .homewords2{
+    padding-right: 5rem;
+    text-align: justify;
+    border: 0.1rem #c0c0c0 transparent;
+    width: fit-content;
+    margin-left: 10rem;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  
+.homebutton2{
+  visibility: hidden;
+}
+.about1{
+  text-align: justify;
+  border: 0.1rem #c0c0c0 transparent;
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.Admission{
+
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.management1{
+  display: flex;
+  text-align: justify;
+  justify-content: space-evenly;
+  width: 30rem;
+  margin-left: 0;
+  padding-top: 3rem;
+}
+.TEXTWORD{
+  padding: auto;
+}
+.TEXTWORD1{
+
+  width: auto;
+  height: fit-content;
+  text-align: justify;
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+}
+.TEXTWORD2{
+  margin-left: 0;
+ width: auto;
+  height: fit-content;
+  text-align: justify;
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+}
+.teacherprofile{
+  height: fit-content;
+  text-align: justify;
+  border: 0.1rem #c0c0c0 transparent;
+  width: 95%;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+/*Event*/
+.event{
+  height: fit-content;
+line-height: 3;
+text-align: center;
+}
+.col-2{
+
+  display: auto;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+  width: 3rem;
+  min-width: 2rem;
+}
+
+.col-1a{
+visibility: visible;
+margin-left: 5rem;
+}
+
+  
+  input,
+  textarea {
+      font: 18px Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+      display: block;
+      border: solid 0.1rem;
+      padding: 20px;
+      width: 300px;
+      height: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      outline: none;
+      transition: all 0.2s ease-in-out;
+  }
+  
+}

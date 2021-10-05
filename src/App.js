@@ -20,25 +20,23 @@ import sgf from './sgffiles/sgflogo2.png';
 function App() {
   return (
     <div className="grid-container">
-
       <header>
-        <nav className='row'>
-
+        <div className='footer-row'>
           <div>
             <Link to="/" className='brand'>
-              <img className='header-image' src={sgf} alt='school logo' />
-              <p>SGF SCHOOLS</p>
+              <img className='header-photo' src={sgf} alt='school logo' /><p>SGF SCHOOLS</p>
             </Link>
           </div>
           <div>
-            <Link to="/AboutUs">About Us</Link>
+            <Link to="/AboutUs">AboutUs</Link>
             <Link to="/Admission"> Admission</Link>
             <Link to="/Management">Management </Link>
             <Link to="/Event">Event </Link>
             <Link to="/Contact"> Contact</Link>
           </div>
-        </nav>
+        </div>
       </header>
+
 
       <Switch>
         <Route exact path="/" >
@@ -84,8 +82,8 @@ function App() {
           </div>
         </div>
       </footer>
+    </div>
 
-    </div >
 
   );
 }
