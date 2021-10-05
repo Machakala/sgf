@@ -31,7 +31,7 @@ function EventScreen(props) {
     }
     return (
         <div >
-            <tittle className="about1">
+            <tittle className="home">
                 EVENT
             </tittle>
             <br />
