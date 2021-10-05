@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/sgf/static/css/main.3a818406.chunk.css",
-    "main.js": "/sgf/static/js/main.9767e57d.chunk.js",
-    "main.js.map": "/sgf/static/js/main.9767e57d.chunk.js.map",
-    "runtime-main.js": "/sgf/static/js/runtime-main.8d0a2683.js",
-    "runtime-main.js.map": "/sgf/static/js/runtime-main.8d0a2683.js.map",
+    "main.css": "/sgf/static/css/main.b2a249e5.chunk.css",
+    "main.js": "/sgf/static/js/main.71599fde.chunk.js",
+    "main.js.map": "/sgf/static/js/main.71599fde.chunk.js.map",
+    "runtime-main.js": "/sgf/static/js/runtime-main.35fda18d.js",
+    "runtime-main.js.map": "/sgf/static/js/runtime-main.35fda18d.js.map",
     "static/css/2.8cebfa1f.chunk.css": "/sgf/static/css/2.8cebfa1f.chunk.css",
-    "static/js/2.ca5cacdf.chunk.js": "/sgf/static/js/2.ca5cacdf.chunk.js",
-    "static/js/2.ca5cacdf.chunk.js.map": "/sgf/static/js/2.ca5cacdf.chunk.js.map",
-    "static/js/3.87bb982a.chunk.js": "/sgf/static/js/3.87bb982a.chunk.js",
-    "static/js/3.87bb982a.chunk.js.map": "/sgf/static/js/3.87bb982a.chunk.js.map",
+    "static/js/2.4e88d28e.chunk.js": "/sgf/static/js/2.4e88d28e.chunk.js",
+    "static/js/2.4e88d28e.chunk.js.map": "/sgf/static/js/2.4e88d28e.chunk.js.map",
+    "static/js/3.baee4fcb.chunk.js": "/sgf/static/js/3.baee4fcb.chunk.js",
+    "static/js/3.baee4fcb.chunk.js.map": "/sgf/static/js/3.baee4fcb.chunk.js.map",
     "index.html": "/sgf/index.html",
     "static/css/2.8cebfa1f.chunk.css.map": "/sgf/static/css/2.8cebfa1f.chunk.css.map",
-    "static/css/main.3a818406.chunk.css.map": "/sgf/static/css/main.3a818406.chunk.css.map",
-    "static/js/2.ca5cacdf.chunk.js.LICENSE.txt": "/sgf/static/js/2.ca5cacdf.chunk.js.LICENSE.txt",
+    "static/css/main.b2a249e5.chunk.css.map": "/sgf/static/css/main.b2a249e5.chunk.css.map",
+    "static/js/2.4e88d28e.chunk.js.LICENSE.txt": "/sgf/static/js/2.4e88d28e.chunk.js.LICENSE.txt",
     "static/media/2019 Graduation graduants      seated (1).33554c39.jpg": "/sgf/static/media/2019 Graduation graduants      seated (1).33554c39.jpg",
     "static/media/index.css": "/sgf/static/media/SGF.49ffc785.jpg",
     "static/media/addmissionpry.e8399468.png": "/sgf/static/media/addmissionpry.e8399468.png",
@@ -21,10 +21,10 @@
     "static/media/sgflogo2.181a82e1.png": "/sgf/static/media/sgflogo2.181a82e1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d0a2683.js",
+    "static/js/runtime-main.35fda18d.js",
     "static/css/2.8cebfa1f.chunk.css",
-    "static/js/2.ca5cacdf.chunk.js",
-    "static/css/main.3a818406.chunk.css",
-    "static/js/main.9767e57d.chunk.js"
+    "static/js/2.4e88d28e.chunk.js",
+    "static/css/main.b2a249e5.chunk.css",
+    "static/js/main.71599fde.chunk.js"
   ]
 }
