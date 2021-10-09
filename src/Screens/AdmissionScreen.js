@@ -19,7 +19,7 @@ function AdmissionScreen() {
                     />
                 </div>
                 <div className="card-body" >
-                    <Button variant="outline-dark" >
+                    <Button variant="dark" >
                         <Link to='/Primaryregister' >
                             Primary
                         </Link>
@@ -36,7 +36,7 @@ function AdmissionScreen() {
                     />
                 </div>
                 <div className="card-body" >
-                    <Button variant="outline-dark" >
+                    <Button variant="dark" >
                         <Link to='/Nurseryregister' >
                             Nursery
                         </Link>
@@ -53,7 +53,7 @@ function AdmissionScreen() {
                     />
                 </div>
                 <div className="card-body" >
-                    <Button variant="outline-dark" >
+                    <Button variant="dark" >
                         <Link to='/Privatelessonregister' >
                             Private Lesson
                         </Link>

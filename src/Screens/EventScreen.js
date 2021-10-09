@@ -3,9 +3,8 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import 'react-calendar/dist/Calendar.css';
 import { Link } from "react-router-dom";
-import grad from '../sgffiles/2019 Graduation graduants      seated (1).jpg';
-import yearParty from '../sgffiles/End of year Party Pupils enjoying    with Father Chrismass in one of the end of year Party.jpg';
 import { Button } from 'react-bootstrap';
+import data from "../data";
 
 //import Eventregister from "../Components/Eventregister";
 
@@ -51,51 +50,62 @@ const handleclick = (e) => {
             </tittle>
             <br />
             <div className="event">
-                <div className="eventopen">
-                    <subtittle className="about1">
-                        Graduation
-                    </subtittle>
-                    <Container fluid>
+                {data.OpenEvents.map((OpenEvents) => (
+                    <div key={OpenEvents._id}>
+                        <div className="eventopen">
+                            <subtittle className="about1">
+                                {OpenEvents.name}
+                            </subtittle>
+                            <Container fluid>
+                                <Row >
+                                    <Col bg="light">
+                                        <Button variant="dark"><Link to="/Eventregister"> {OpenEvents.action}</Link></Button>
+                                    </Col>
+                                    <Col>
+                                        {OpenEvents.Location}
+                                    </Col>
+                                    <Col>
+                                        <img
+                                            className='col-1a'
+                                            src={OpenEvents.image}
+                                            alt={OpenEvents.name}
+                                        />
+                                    </Col>
+                                </Row>
+                            </Container>
+                        </div>
+                    </div>
+                ))}
+                {data.ClosedEvents.map((ClosedEvents) => (
+                    <div key={ClosedEvents._id}>
+                        <div className="eventover">
+                            <subtittle className="about1">
+                                {ClosedEvents.name}
+                            </subtittle>
+                            <Container fluid>
+                                <Row >
+                                    <Col bg="light">
+                                        <Button variant="dark" onClick={Regover}>{ClosedEvents.action}</Button>
+                                    </Col>
+                                    <Col>
+                                        {ClosedEvents.Location}
+                                    </Col>
+                                    <Col>
+                                        <img
+                                            className='col-1a'
+                                            src={ClosedEvents.image}
+                                            alt={ClosedEvents.name}
+                                        />
+                                    </Col>
+                                </Row>
+                            </Container>
+                        </div>
+                    </div>
+                ))}
 
-                        <Row >
-                            <Col bg="light">
-                                <Button variant="outline-success"><Link to="/Eventregister"> REGISTER</Link></Button>
-                            </Col>
-                            <Col>
-                                Location: School
-                            </Col>
-                            <Col>
-                                <img
-                                    className='col-1a'
-                                    src={grad}
-                                    alt='graduants'
-                                />
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-                <div className="eventover" >
-                    <subtittle className="about1">
-                        End Of The Year Party
-                    </subtittle>
-                    <Row>
-                        <Col >
-                            <Button variant="outline-success" onClick={Regover}>Closed</Button>
-                        </Col>
-                        <Col>
-                            Location: School
-                        </Col>
-                        <Col>
-                            <img
-                                className='col-1a'
-                                src={yearParty}
-                                alt='end of the year party'
-                            />
-                        </Col>
-                    </Row>
-                </div>
 
-            </div >
+            </div>
+
         </div >
 
     );

@@ -6,6 +6,7 @@ import HomeScreen from "./Screens/HomeScreen";
 import AboutUsScreen from "./Screens/AboutUsScreen";
 import AdmissionScreen from "./Screens/AdmissionScreen";
 import ManagementScreen from "./Screens/ManagementScreen";
+import GalleryScreen from "./Screens/GalleryScreen"
 import EventScreen from "./Screens/EventScreen.js";
 import ContactScreen from "./Screens/ContactScreen";
 import auntyameh from "./Teachers/auntyameh";
@@ -39,6 +40,7 @@ function App() {
                 <Nav.Link as={Link} to={"/AboutUs"}>About Us</Nav.Link>
                 <Nav.Link as={Link} to={"/Admission"}>Admission</Nav.Link>
                 <Nav.Link as={Link} to={"/Management"}>Management</Nav.Link>
+                <Nav.Link as={Link} to={"/Gallery"}>Gallery</Nav.Link>
                 <Nav.Link as={Link} to={"/Event"}>Event</Nav.Link>
                 <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
               </Nav>
@@ -58,6 +60,9 @@ function App() {
         </Route>
         <Route exact path="/Management" >
           <ManagementScreen />
+        </Route>
+        <Route exact path="/Gallery" >
+          <GalleryScreen />
         </Route>
         <Route exact path="/Event" >
           <EventScreen />
@@ -87,6 +92,7 @@ function App() {
               <Nav.Link as={Link} to={"/AboutUs"}>About Us</Nav.Link>
               <Nav.Link as={Link} to={"/Admission"}>Admission</Nav.Link>
               <Nav.Link as={Link} to={"/Management"}>Management</Nav.Link>
+              <Nav.Link as={Link} to={"/Gallery"}>Gallery</Nav.Link>
               <Nav.Link as={Link} to={"/Event"}>Event</Nav.Link>
               <Nav.Link as={Link} to={"/Contact"}>Contact</Nav.Link>
             </Nav>

@@ -12,7 +12,7 @@ function AboutUsScreen() {
                         MISSION STATEMENT
                     </div>
                     <br />
-                    SGF Private School recognizes that each Child is a talented individual from God and as such that all Children are Creative and that all Children need to succeed through the collective efforts of parents, teachers and Government.Therefore SGF Private School respects the individual needs of Children and so identifies with them, fosters a caring and creative/standardized environment: and emphasizes the Spiritual, Social, emotional, Physical and intellectual development of each Child.
+                    SGF Private School recognizes that each Child is a talented individual from God and as such that all Children are Creative and that all Children need to succeed through the collective efforts of parents, teachers and Government.Therefore SGF Private School respects the individual needs of Children and so identifies with them, fosters a caring and creative/standardized environment: and emphasizes the Spiritual, Social, emotional, Physical and intellectual development of each Child at heart to drive her dream through the unchanging, sustaining and immeasurable help of God Almighty, who also brought to us selfless and goal getting teachers, progressive and supportive parents and well-wishers, and  many more who see nothing other than the growth and advancement of SUPREME GRACE FOUNDATION nursery and primary school. Ever ready to help AFED visited the school many times to support our activities.
                 </div>
                 <div className="about2b">
                     <div>

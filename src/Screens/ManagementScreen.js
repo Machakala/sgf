@@ -17,7 +17,7 @@ function ManagementScreen(props) {
                 <div className='description'>
                     Born at Kaduna, Mary Lemechi formally Mary Ameh attended Government Model Secondary School Mina Niger State and graduated in the year 2000. She later furthered her Education in 2006 at College of Education Kastina Alla, Benue where she obtained her NCE in Physical and Health Education.</div>
                 <br />
-                <Button variant="outline-dark" ><Link to="/auntyameh"> Read more...</Link></Button>
+                <Button variant="dark" ><Link to="/auntyameh"> Read more...</Link></Button>
 
             </div>
             <br />
@@ -29,7 +29,7 @@ function ManagementScreen(props) {
                 <div className='description'>
                     From Anambra State of Nigeria, Mr. Okafor, a Chartered Accountant and Tax Practitioner started his Civil Servant Career in 1981 as a Clerk in Lagos with the present Transmission Company of Nigeria.                </div>
                 <br />
-                <Button variant="outline-dark" ><Link to="/MROKAFOR"> Read more...</Link></Button>
+                <Button variant="dark" ><Link to="/MROKAFOR"> Read more...</Link></Button>
 
             </div>
         </div >
@@ -38,6 +38,7 @@ function ManagementScreen(props) {
     const Text1 = () =>
         <div className='TEXTWORD'>
             <div className='TEXTWORD1'>
+
                 <div>
                     (Educationist) Mrs. Kemi Dauda
                 </div>
@@ -47,11 +48,12 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <Button variant="outline-dark" ><Link to="/kdauda"> Read more...</Link></Button>
+                <Button variant="dark" ><Link to="/kdauda"> Read more...</Link></Button>
 
             </div>
             <br />
             <div div className='TEXTWORD2'>
+
                 <div >
                     (Effective Administrator) Mr. Olurotimi Owadimbola
                 </div>
@@ -61,11 +63,12 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <Button variant="outline-dark" ><Link to="/oowadimbola"> Read more...</Link></Button>
+                <Button variant="dark" ><Link to="/oowadimbola"> Read more...</Link></Button>
 
             </div>
             <br />
-            <div className='TEXTWORD1'>
+            <div
+                className='TEXTWORD1'>
                 <div>
                     (Seasoned Educationist) Mrs. Maria Onuoha
                 </div>
@@ -75,7 +78,7 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <Button variant="outline-dark" ><Link to="/monuoha"> Read more...</Link></Button>
+                <Button variant="dark" ><Link to="/monuoha"> Read more...</Link></Button>
 
             </div>
             <br />
@@ -89,7 +92,7 @@ function ManagementScreen(props) {
 
                 </div>
                 <br />
-                <Button variant="outline-dark" ><Link to="/apaul"> Read more...</Link></Button>
+                <Button variant="dark" ><Link to="/apaul"> Read more...</Link></Button>
             </div>
 
         </div>
